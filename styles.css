@@ -1,0 +1,253 @@
+/* ===============================
+   Reiniciamos todo
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    background-color: #ffffff;
+}
+
+
+/* ===============================
+   Navegador principal
+================================ */
+.browser-bg {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #b6b4b4;
+}
+
+
+/* ===============================
+  Contenido principal
+================================ */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #d9d9d9;
+    padding: 1rem;
+}
+
+
+/* ===============================
+   Header
+================================ */
+.header {
+    background-color: #f9faf8;
+    padding: 1rem;
+    text-align: center;
+    border: 2px solid #083802;
+    position: sticky;
+    top: 0;
+    background-color: #7f7f7f;
+
+}
+
+
+/* ===============================
+ Primera seccion
+================================ */
+.fist-section {
+    display: flex;
+    gap: 1rem;
+    background-color: #fcfcfc;
+    padding: 1rem;
+    align-items: center;
+}
+
+  h5 {
+    color: #2a5217;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+
+}
+
+.fist-section p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.reference-image img {
+    width: 100%;
+    height: auto;
+}
+
+.reference-image,
+.related-text {
+    flex: 1;
+    min-height: 200px;
+    padding: 1rem;
+
+}
+
+
+/* ===============================
+   NAVEGACIÓN
+================================ */
+.main-nav {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background-color: #8f918e;
+    color: yellow;
+    text-align: center;
+    border: 2px solid #000;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+    
+}
+.main-nav ul li {
+    color: white;
+    text-decoration: none;
+    margin: 0.2rem;
+    
+}
+
+/* ESPACIADO VISUAL */
+.espaciado {
+    height: 1rem;
+}
+
+
+/* ===============================
+   Principal
+================================ */
+.content-wrapper {
+    display: flex;
+    gap: 1rem;
+    background-color: #f6f7f8;
+    padding: 1rem;
+    align-items: center;
+}
+
+
+/* ASIDE */
+.sidebar {
+    width: 30%;
+    background-color: #eaf0fc;
+     padding: 1rem;
+}
+
+.aside-content {
+    padding: 0rem;
+    min-height: 150px;
+}
+.aside-content img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* MAIN */
+.main-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.article {
+     padding: 1.5rem;
+ }
+
+
+/* ===============================
+   GALERÍA
+================================ */
+
+.Gallery-Tile {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background-color: #8f918e;
+    color: yellow;
+    text-align: center;
+ }
+
+.gallery {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+.image-box {
+    flex: 1;
+    min-height: 120px;
+    background-color: #ece4de;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image-box img {
+    max-width: 60%;
+    margin-bottom: 1rem;
+    height: auto;
+}
+
+
+/* ===============================
+   footer
+================================ */
+.footer {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    background-color: #7f7f7f;
+    padding: 1rem;
+}
+
+.footer-content {
+    flex: 1;
+     color: white;
+    padding: 1rem;
+    text-align: center;
+ }
+
+
+/* ===============================
+   Media query para el movil
+================================ */
+@media (max-width: 768px) {
+
+    /* Fondo navegador */
+    .browser-bg {
+        padding: 1rem;
+    }
+
+    /* Imagen + texto */
+    .fist-section {
+        flex-direction: column;
+    }
+
+    /* Contenido principal */
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .main-content {
+        width: 100%;
+    }
+
+    /* Galería */
+    .gallery {
+        flex-direction: column;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+    }
+
+}
